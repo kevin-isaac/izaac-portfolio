@@ -29,7 +29,7 @@ const projects = [
     {
         title: "Zack's Getaway",
         description:
-            "A React site used for advertising and making reservations at a family vacation rental.",
+            "A React site used for advertising and making reservations at a family vacation rental. Utilizes React Formik, Redux.",
         getImageSrc: () => require("../img/website1.png"),
         badges:["Javascript","React","Redux"]
     },
@@ -50,7 +50,7 @@ const projects = [
     {
         title: "Packing Distribution App",
         description:
-            "A simple [React] app used to determine the best packing arrangement for goods inside of storage container departments based on chosen priorities.",
+            "A simple React app used to determine the best packing arrangement for goods inside of storage container departments based on chosen priorities. Features Drag & Drop, React Chart, Graphs, and 3D libraries. Features Tailwind CSS. ",
         getImageSrc: () => require("../img/website4.png"),
         badges:["Javascript","React"]
     },
@@ -59,7 +59,7 @@ const projects = [
     {
         title: "Time Table EZ",
         description:
-            "A React app which generates a printable timetable for students at the University of the West Indies during their current semester.",
+            "A React app which generates a printable timetable for students at the University of the West Indies during their current semester. Features user account creation and log in. Utlizes React Formik, Material UI and Redux.",
         getImageSrc: () => require("../img/website1.png"),
         badges:["Javascript","React","Next.js"]
     },
