@@ -1,17 +1,12 @@
 import React from "react";
-
-import certicon from '../img/meta-developer-certificate.png';
-import FadeInSection from "./FadeInSection";
 import { useState } from "react";
 import {
   Box,
   SimpleGrid,
   Flex,
-  Image,
   Heading,
-  Stack, Link,
+  Link,
   Text,
-  Button,
   VStack
 } from "@chakra-ui/react";
 
@@ -100,10 +95,10 @@ export default function Bio(props) {
 
               {jobs.map((job, index) => (
                 <li key={index}>
-                  {active == index &&
+                  {active === index &&
                     <Link p="0.5em" cursor="pointer" bg={"#21394d"} fontWeight={"bold"} >{job.job}</Link>
                   }
-                  {active != index &&
+                  {active !== index &&
                     <Link p="0.5em" color="#909090" cursor="pointer" _hover={{ boxShadow: "xl", transform: "scale(1.05)", bg: "#21394d" }} onClick={() => setActive(index)}>{job.job}</Link>
                   }
                 </li>

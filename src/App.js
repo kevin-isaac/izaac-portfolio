@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Landing from './pages/Landing/index.js';
 import UnderConstruction from './pages/Construction/index.js';
 import  { useRef,useState } from 'react';
-import {Routes, Link, BrowserRouter, Route, NavLink, HashRouter, Router} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 function App() {
   const refs={
     

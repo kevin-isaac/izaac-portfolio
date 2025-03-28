@@ -1,26 +1,11 @@
 import React from "react";
-import SlideInComponent from './SlideInComponent';
 import Card from "./Card";
 
 
 import {
     Box,
-    SimpleGrid,
     Flex,
-    Image,
-    Heading,
-    Stack,
-    Text
-} from "@chakra-ui/react";
-
-import {
-
-    CardBody,
-    Divider,
-    CardFooter,
-    Button,
-    ButtonGroup,
-
+    Heading
 } from "@chakra-ui/react";
 
 
