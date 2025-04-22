@@ -38,7 +38,9 @@ a{
 
 .nav-bar-links:hover, 
 .nav-bar-links:focus {
-  background-color: #21394d;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+ 
 }
 
 

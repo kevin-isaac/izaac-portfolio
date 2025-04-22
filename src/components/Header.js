@@ -1,58 +1,26 @@
 'use client'
 
 import logo from '../img/logo.png';
-import  { useEffect, useRef, useState } from 'react';
 
 import {
   Box,
   Flex,
   Avatar,
   HStack,
-  useDisclosure,
-    MenuItem,
-    Menu,
-    Button,
-    MenuList,
-  useColorModeValue,
-  Stack,
-  Heading,
-  
+  useColorModeValue,  
   VStack
 } from '@chakra-ui/react'
 
 import { Link } from "react-router-dom";
 
 
-import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons';
- 
-
-
 
 const Links = ['About','Bio', 'Projects',  'Contact']
 
-const NavLink = (props) => {
-  const { children } = props
-
-  return (
-    <Box
-      as="a"
-      className='App-link'
-      px={20}
-      py={10}
-      rounded={'lg'}
-       borderRadius="15"
-      _hover={{
  
-        bg: "black",
-      }}
-      href={'#'}>
-      {children}
-    </Box>
-  )
-}
 
 export default function Header(props) {
-  const { isOpen, onOpen, onClose } = useDisclosure()
+ 
   
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -96,13 +64,13 @@ export default function Header(props) {
                 {Links.map((link,index) => (
 
                   <VStack key={index}>
-                    {link==props.active&&
+                    {link===props.active&&
                     <>
 
                     <Box transition="transform 0.3s ease-in-out" _hover={{ boxShadow: "xl", transform: "scale(1.05)"  }} className="nav-bar-links active" key={link} onClick={()=>scrollToSection(props.refs[link])   } >{link}</Box>
                     </>  
                     }
-                    {link!=props.active&&
+                    {link!==props.active&&
                     <>
                     <Box transition="transform 0.3s ease-in-out" _hover={{ boxShadow: "xl", transform: "scale(1.05)"  }} className="nav-bar-links" key={link} onClick={()=>scrollToSection(props.refs[link])   } >{link}</Box>
                     </>

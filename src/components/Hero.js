@@ -1,21 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
 import profilePic from '../img/profile_col.png';
-import certicon from '../img/meta-developer-certificate.png';
+import metaPic from '../img/meta-developer-certificate.png';
 import SlideInComponent from './SlideInComponent';
 import {
   Box,
-  Button,
   Flex,
   Image,
   Heading,
-  Stack,
   Text,
-
-
   SimpleGrid,
-  GridItem
+  GridItem, Link
 } from "@chakra-ui/react";
 
 export default function Hero({
@@ -73,13 +67,14 @@ export default function Hero({
             >
               Bringing Enjoyable Aesthetic Experiences to your Screens.
             </Heading>
+           
           </Box>
         </GridItem> </SlideInComponent>
         <GridItem colSpan={1}>
           <Box alignContent={"center"} justifyContent={"center"}>
             {/* TODO: Make this change every X secs */}
-            <Image src={profilePic} id="hero-avatar" maxW={["3em", "7em"]} m={["1vh", "1vh", "1vh", "1vh", "5vh"]} rounded="50%" shadow="2xl" transition="transform 0.3s ease-in-out"/>
-
+           <Link href="https://www.linkedin.com/in/kevin-isaac-8577631bb/" target="_blank" > <Image src={profilePic} id="hero-avatar" maxW={["3em", "7em"]} m={["1vh", "1vh", "1vh", "1vh", "5vh"]}  marginRight={["0em", "-1em"]} rounded="50%" shadow="2xl" transition="transform 0.3s ease-in-out"/></Link> 
+           <Link href="https://coursera.org/share/be0c0ac83bbafa5676d0b5c9d4dc8a88" textDecoration="none" target="_blank" > <Image  transition="transform 0.3s ease-in-out" id="hero-avatar" maxW={["2em", "5em"]}  shadow="2xl"    src={metaPic}></Image></Link> 
           </Box>
         </GridItem>
 
@@ -107,7 +102,7 @@ export default function Hero({
 
             </Text>
             </SlideInComponent> 
-
+            
            
           </Box>
         </GridItem>

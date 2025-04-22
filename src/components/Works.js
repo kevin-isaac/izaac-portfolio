@@ -14,46 +14,50 @@ const projects = [
     {
         title: "Zack's Getaway",
         description:
-            "A React site used for advertising and making reservations at a family vacation rental. Utilizes React Formik, Redux.",
+            "A mock ReactJS website for advertising and making reservations at a family vacation rental. ",
         getImageSrc: () => require("../img/website1.png"),
-        badges:["Javascript","React","Redux"]
+        badges:["Javascript","React"],
+        link:"https://zacksgetaway.netlify.app"
     },
     {
-        title: "Shy Steps Media",
+        title: "Time Table EZ",
         description:
-            "A wordpress portfolio site using custom plugins to showcase graphic design works and recieve commissions for new promotional media including logos, ads, business cards and videos.",
-        getImageSrc: () => require("../img/website2.png"),
-        badges:["Wordpress"]
+            "An app which generates a printable timetable for students at the University of the West Indies, utilizing data pre-2016. Based on work done while at the University, re-done using ReactJS. Utilizes Material UI and TailwindCSS for styling.",
+        getImageSrc: () => require("../img/website4.png"),
+        badges:["Javascript","React"],
+        link:"https://ttable-ez.netlify.app"
     },
     {
         title: "Air Pollution Tracker",
         description:
-            "An Angular Progressive Web App to track the level of air pollution in a specific geographical area and gives alerts on air pollution levels.",
+            "A mock Angular Progressive Web App to track the level of air pollution in a specific geographical area, and give alerts on air pollution levels. Based on work done within Intelligent Applications Company Limited. Utilizes Bootstrap for styling and random sample data for demonstration purposes.",
         getImageSrc: () => require("../img/website3.png"),
-        badges:["Typescript", "Angular"]
+        badges:["Typescript", "Angular"],
+        link:"https://izaacaqi.netlify.app/"
     },
-    {
+   /* {
         title: "Packing Distribution App",
         description:
-            "A simple React app used to determine the best packing arrangement for goods inside of storage container departments based on chosen priorities. Features Drag & Drop, React Chart, Graphs, and 3D libraries. Features Tailwind CSS. ",
+            "A simple React app used to determine the best packing arrangement for goods inside of storage container departments based on chosen priorities.  Features Tailwind CSS. ",
         getImageSrc: () => require("../img/website4.png"),
         badges:["Javascript","React"]
-    },
-
-
+    },*/
     {
-        title: "Time Table EZ",
+        title: "Logo Legs Media",
         description:
-            "A React app which generates a printable timetable for students at the University of the West Indies during their current semester. Features user account creation and log in. Utlizes React Formik, Material UI and Redux.",
-        getImageSrc: () => require("../img/website1.png"),
-        badges:["Javascript","React","Next.js"]
+            "A simple wordpress portfolio site to showcase graphic design works and receive commissions for new promotional media including logos, ads, business cards and videos.",
+        getImageSrc: () => require("../img/website2.png"),
+        badges:["Wordpress"], link:"https://logolegs.wordpress.com"
     },
+
+   
     {
         title: "Bop Stick Games",
         description:
-            "An Angular site for a video game developer studio, featuring a gallery of marketing material, dev blog section, and staff members.",
-        getImageSrc: () => require("../img/website2.png"),
-        badges:["Typescript","Angular"]
+            "My project page on itch.io, featuring Phaser JS games that I have worked on, playable within internet browsers. Games created exclusively using Javascript and HTML, and also available on Android devices via Google Play.",
+        getImageSrc: () => require("../img/website5.png"),
+        badges:["PhaserJS"],
+        link:"https://bopstick.itch.io"
     },
 
 
@@ -68,7 +72,7 @@ export default function Works(props) {
 
             <Flex
                 minHeight={"10vh"} minWidth={"100vw"} alignContent={"center"} justifyContent={"center"}
-                className="ProjectBG" id="Projects" mb="5rem"
+                className="ProjectBG" id="Projects" mb="15rem"
                 {...props.rest}
             >
 
@@ -109,6 +113,7 @@ export default function Works(props) {
                                         description={project.description}
                                         badges={project.badges}
                                         imageSrc={project.getImageSrc()}
+                                        link={project.link}
 
                                     /> 
                                 ))}

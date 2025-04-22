@@ -1,51 +1,21 @@
-import { useFormik } from "formik";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import logo from '../img/logo.png';
-import certicon from '../img/meta-developer-certificate.png';
+
 import {
   Box,
-  Button,
-  Heading,
   Flex,
   Text,
-  FormLabel,
-  Input,
-  Textarea,
   VStack,
   Image,
-  Stack,
   SimpleGrid,
-  GridItem, Grid
+  GridItem
 } from "@chakra-ui/react";
 
-import { Container, HStack, Icon, Link } from '@chakra-ui/react'
-import { SiGithub, SiLinkedin, SiX } from 'react-icons/si'
+import {  HStack, Link } from '@chakra-ui/react'
+import { SiGithub, SiLinkedin } from 'react-icons/si'
 
-
-
-import { List } from "@chakra-ui/react"
-
-
-const socialLinks = [
-  {
-    href: "/",
-    icon: "SiLinkedin"
-
-  }
-];
 
 export default function Contact() {
-  const formik = useFormik({
-    initialValues: {
-      name: "",
-      email: "",
-      message: ""
-    },
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-    }
-  });
-
 
 
   return (

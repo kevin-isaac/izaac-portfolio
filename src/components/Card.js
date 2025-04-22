@@ -1,9 +1,7 @@
-import { Heading, Box, Image, Text, HStack , SimpleGrid, GridItem, Link,Badge } from "@chakra-ui/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
+import { Heading, Box, Image, Text , SimpleGrid, GridItem, Link } from "@chakra-ui/react";
 import React from "react";
 
-const Card = ({ title, description, imageSrc, badges }) => {
+const Card = ({ title, description, imageSrc, badges, link }) => {
   return (
     <Box
       borderRadius="1vh"
@@ -24,7 +22,7 @@ const Card = ({ title, description, imageSrc, badges }) => {
         <Box pl="3.0vh" pr="3.0vh" pt="1.0vh" pb="1.0vh" >
           <Heading  fontSize={["8px","8px","8px","12px","16px"]} >{title}</Heading>
           <Text color="#D0D0D0" fontSize={["8px","8px","8px","12px","16px"]}>{description}</Text>
-          <Link textDecoration={"none"} href="..." fontSize={["8px","8px","8px","12px","16px"]}> View Project <i class="fa fa-link link-col" aria-hidden="true"></i> </Link> 
+          {link&&<Link textDecoration={"none"} href={link} target='_blank' fontSize={["8px","8px","8px","12px","16px"]}> View Project <i class="fa fa-link link-col" aria-hidden="true"></i> </Link>} 
           {badges&&badges.map((badge,index) => (
                                               <span key={index} className="badge">{badge}</span>
                                           ))}

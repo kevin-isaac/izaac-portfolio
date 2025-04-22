@@ -7,7 +7,7 @@ import Works from "../../components/Works.js";
 import Contact from "../../components/Contact.js";
 import FadeInSection from '../../components/FadeInSection';
 
-import  { useEffect, useRef } from 'react';
+import  { useEffect } from 'react';
 
 
 export default function Landing(props) {
@@ -27,11 +27,6 @@ export default function Landing(props) {
 }
 
   const handleScroll = (e) => {
-		/*const { scrollTop, scrollHeight, clientHeight } = e.target;
-		const position = Math.ceil(
-			(scrollTop / (scrollHeight - clientHeight)) * 100
-		);
-		setScrollPosition(position);*/
     
     if(isInViewport(document.getElementById("Bio"))) props.setActive("Bio");
     else if(isInViewport(document.getElementById("Contact"))) props.setActive("Contact");

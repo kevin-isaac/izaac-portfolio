@@ -1,32 +1,8 @@
-/*import React, {useState, useRef, useEffect} from 'react';
- 
 
-export default function FadeInSection(props) {
-  const [isVisible, setVisible] = useState(true);
-
-  const domRef = React.useRef();
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisible(entry.isIntersecting));
-    });
-
-    observer.observe(domRef.current);
-
-    return () => observer.unobserve(domRef.current);
-  }, []);
-
-  return (
-    <div ref={ domRef } className={ `fade-in-section ${ isVisible ? 'is-visible' : '' }` }>
-      { props.children }
-    </div>
-  )
-}*/
 
 //react
 import  { useEffect, useRef, React } from 'react';
 //react dom
-import { createRoot } from "https://esm.sh/react-dom@18.2.0/client";
 
 const FadeInSection = ({ children }) => {
 	const wrapper = useRef();
