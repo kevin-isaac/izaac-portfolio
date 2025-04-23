@@ -14,6 +14,7 @@ import {
 const jobs = [
   {
     title: "Software Developer",
+    time: " (2020-2022)",
     job: "Intelligent Applications Company Ltd.",
     description:
       "Built, styled, deployed and tested various progressive web apps for clients using Angular, Angular JS and React JS, IIS and SQL Server. Development conducted using Visual Studio and Visual Studio Code. Version control and project management conducted through Git and Azure DevOps. Assisted in social media marketing via linkedIn and Twitter."
@@ -25,13 +26,13 @@ const jobs = [
 
   {
     title: "Web Developer",
-    job: "Campus I.T Services, UWI",
+    job: "Campus I.T Services, UWI STA", time: " (2018-2020)",
     description:
       "Developed software applications for internal IT Services staff using PHP & HTML. Maintained various university websites using Drupal content management systems and assisted university staff in updating their own department sites. Utilized Wordpress in order to create a new site for UWI STA's World Of Work programme, meant to connect graduate students with job recruiters."
   },
   {
     title: "Web Maintenance & Graphic Design Contractor",
-    job: "Clever Solutions",
+    job: "Clever Solutions", time:" (2018 - Ongoing)",
     description:
       "Performed technical updates to revamp and maintain company website using Wordpress and custom plugins, provided assitance in creation and maintenance of company's online admin accounts, created and performed edits to various company marketing documents as requested on contract."
   },
@@ -41,7 +42,7 @@ const jobs = [
 
   {
     title: "I.T Camp Counselor",
-    job: "NIHERST",
+    job: "NIHERST", time:" (2015)",
     description:
       "Provided teaching and supervision assistance for Head Counselor at vacation camp. Designed, created, planned and presented lessons to children ages 7 through 17 on IT subjects such as Game Development, HTML, CSS, Unity Engine and Adobe Photoshop."
   },
@@ -128,7 +129,7 @@ export default function Bio(props) {
               fontSize={["8px", "10px", "12px", "14px"]}
             >
               {
-                '@' + jobs[active].job
+                '@' + jobs[active].job + jobs[active].time
               }
 
             </Text>
@@ -152,7 +153,7 @@ export default function Bio(props) {
         </SimpleGrid>
         <Box width="100%" maxWidth={"66vw"} fontSize={["8px", "12px", "16px", "16px"]}>
 
-          <Link cursor={"pointer"} alignContent={"right"} justifyContent={"right"} p={"1em"} _hover={{ boxShadow: "1em", bg: "#61dafb", color: "#033030", fontWeight: "bold" }} float="right" bg="#033030" color="#61dafb" border={"1px solid #61dafb"} onClick={openPDF}>
+          <Link cursor={"pointer"} alignContent={"right"} justifyContent={"right"} p={"1em"} _hover={{ boxShadow: "1em", bg: "#61dafb", color: "#033030", fontWeight: "bold" }} float="right" bg="#033030" color="#61dafb" border={"1px solid #61dafb"} title="Resume PDF Download" onClick={openPDF}>
             Résumé
           </Link>
 

@@ -16,7 +16,7 @@ const Card = ({ title, description, imageSrc, badges, link }) => {
 
     <SimpleGrid   rounded="md"  minChildWidth="200px"   textAlign="left"       justifyContent={"left"}  color="white"   _hover={{  bg:"#033030" }}  alignItems="left" >
       <GridItem colSpan={1 }>
-      <Image borderRadius="1vh" w={"100%"} src={ (imageSrc)} alt="projectPhoto"/>
+      <Image borderRadius="1vh" w={"100%"} src={ (imageSrc)} alt={title+" Photo"}/>
       </GridItem>
       <GridItem colSpan={3 }>
         <Box pl="3.0vh" pr="3.0vh" pt="1.0vh" pb="1.0vh" >

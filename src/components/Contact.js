@@ -30,7 +30,7 @@ export default function Contact() {
 
           
             <HStack  alignContent={"center"} justifyContent={"center"} textAlign="center">
-                <Image maxW="1.5em" src={logo} />
+                <Image maxW="1.5em" src={logo} alt="iZaac Logo"/>
                 <b>iZaac</b>
               
             </HStack>

@@ -73,8 +73,8 @@ export default function Hero({
         <GridItem colSpan={1}>
           <Box alignContent={"center"} justifyContent={"center"}>
             {/* TODO: Make this change every X secs */}
-           <Link href="https://www.linkedin.com/in/kevin-isaac-8577631bb/" target="_blank" > <Image src={profilePic} id="hero-avatar" maxW={["3em", "7em"]} m={["1vh", "1vh", "1vh", "1vh", "5vh"]}  marginRight={["0em", "-1em"]} rounded="50%" shadow="2xl" transition="transform 0.3s ease-in-out"/></Link> 
-           <Link href="https://coursera.org/share/be0c0ac83bbafa5676d0b5c9d4dc8a88" textDecoration="none" target="_blank" > <Image  transition="transform 0.3s ease-in-out" id="hero-avatar" maxW={["2em", "5em"]}  shadow="2xl"    src={metaPic}></Image></Link> 
+           <Link href="https://www.linkedin.com/in/kevin-isaac-8577631bb/" target="_blank" title="Kevin Isaac on LinkedIn"> <Image alt="Kevin Isaac" src={profilePic} id="hero-avatar" maxW={["3em", "7em"]} m={["1vh", "1vh", "1vh", "1vh", "5vh"]}  marginRight={["0em", "-1em"]} rounded="50%" shadow="2xl" transition="transform 0.3s ease-in-out"/></Link> 
+           <Link href="https://coursera.org/share/be0c0ac83bbafa5676d0b5c9d4dc8a88" textDecoration="none" target="_blank" title="View Meta Certificate"> <Image  alt="Meta Cert Badge" transition="transform 0.3s ease-in-out" id="hero-avatar" maxW={["2em", "5em"]}  shadow="2xl"    src={metaPic}></Image></Link> 
           </Box>
         </GridItem>
 
@@ -94,7 +94,7 @@ export default function Hero({
 
               fontSize={["8px", "12px", "16px", "16px"]}
             >
-              Hello. I'm <b>Kevin Isaac</b>, and I'm a <b>Software Engineer / Graphic Designer</b> based in Trinidad & Tobago.
+              Hello. I'm <b>Kevin Isaac</b>, and I'm a <b>Software Developer / Graphic Designer</b> based in Trinidad & Tobago.
               Over the years, my experience working in the IT industry have allowed me to realize that I possess a particular passion for building Front-End User Experiences with aesthetically pleasing intuitive designs.
               In my work, I've always aimed to enhance the quality of all kinds of digital experiences, be it through elegant interfaces, excellent functionality, engaging content, or entertaining interactivity.
               The fulfilment of establishing positive experiences for others via their screens has been the common denominator of my years spent as an agile Software Engineer, Front-End Web Developer, Game Developer and Graphic Design hobbyist.

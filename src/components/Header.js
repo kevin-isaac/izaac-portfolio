@@ -11,7 +11,7 @@ import {
   VStack
 } from '@chakra-ui/react'
 
-import { Link } from "react-router-dom";
+
 
 
 
@@ -41,8 +41,8 @@ export default function Header(props) {
           
           <HStack spacing={18} width="100%" >
             <Box float="left">
-            <Link to={'/'}  >
-            <Avatar className='nav-bar-avatar' transition="transform 0.3s ease-in-out" _hover={{ boxShadow: "xl", transform: "scale(1.25)"  }}
+       
+            <Avatar title="iZaac" className='nav-bar-avatar' transition="transform 0.3s ease-in-out" _hover={{ boxShadow: "xl", transform: "scale(1.25)"  }}
                   
                   h={'2.5rem'}
                   p={"0.5em"}
@@ -51,7 +51,7 @@ export default function Header(props) {
                   }
                 />
                
-           </Link>
+           
                 
             </Box>
 
